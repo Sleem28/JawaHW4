@@ -8,11 +8,11 @@ public class MergeSortMain {
 
         ArrayCreator arrayCreator = new ArrayCreator();
         MergeSort mergeSort = new MergeSort();
+
         ArrayList<Integer> genList = arrayCreator.createIntegerArrayList();
-
-        ArrayList<Integer> sortList = mergeSort.sortArray(genList);
-
         System.out.println("Сгенерированный лист имеет вид: " + genList);
-        System.out.println("Отсортированный лист имеет вид: " + sortList);
+
+        genList = mergeSort.sortArray(genList);
+        System.out.println("Отсортированный лист имеет вид: " + genList);
     }
 }
